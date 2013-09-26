@@ -12,15 +12,18 @@ new google.maps.Marker({
     map: map,
     icon: {
         path: fontawesome.markers.EXCLAMATION,
-        scale: 0.02,
-        strokeWeight: 1,
+        scale: 0.5,
+        strokeWeight: 0.2,
         strokeColor: 'black',
         strokeOpacity: 1,
         fillColor: '#f8ae5f',
         fillOpacity: 0.7,
-        rotation: 180
     },
     clickable: false,
     position: new google.maps.LatLng(lat, lng)
 });
 ```
+
+##Update
+
+Changed font extraction process - Glyph size is a much more manageable 64px now, and rotation / flip corrected.
