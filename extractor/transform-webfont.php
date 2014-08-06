@@ -19,8 +19,8 @@ if (PHP_SAPI !== 'cli'){
     die("Must be run from cli");
 }
 
-if ($argc != 4){
-    die("please invoke as " . basename(__FILE__) . " file.svg variables.less output.js"  . PHP_EOL);
+if ($argc != 3){
+    die("please invoke as " . basename(__FILE__) . " file.svg variables.less file.paths.svg"  . PHP_EOL);
 }
 if (!is_file($argv[1]) || !is_readable($argv[1])){
     die("First file (.svg) wasn't readable" . PHP_EOL);

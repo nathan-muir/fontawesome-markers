@@ -35,7 +35,7 @@ $output = array();
 foreach($paths as $path){
   $id = $path->attributes->getNamedItem('id')->nodeValue;
   $d = $path->attributes->getNamedItem('d')->nodeValue;
-  $name = strtoupper(str_replace('-','_',$id));
+  $name = strtoupper(str_replace('-','_',str_replace("fa-var-", "", $id)));
   $output[$name] = $d;
 }
 
