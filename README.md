@@ -39,6 +39,6 @@ ctx.stroke(path);
 ```
 
 ##Update
-
+ * 16th October 2014 - Updated to fontawesome 4.2.0
  * 7th August 2014 - Updated to fontawesome 4.1.0, see the [Fontawesome Upgrade Guide](https://github.com/FortAwesome/Font-Awesome/wiki/Upgrading-from-3.2.1-to-4) for the list of changed names.
  * 26th September 2013 - Changed font extraction process - Glyph size is a much more manageable 64px now, and rotation / flip corrected.
