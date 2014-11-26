@@ -2,7 +2,7 @@ Fontawesome Extractor
 =====================
 
 ##Dependencies
-* SVGO https://github.com/nathan-muir/svgo
+* SVGO https://github.com/nathan-muir/svgo/tree/nathan-svgo
 * Font Awesome http://fortawesome.github.io/Font-Awesome
 
 ##How to
