@@ -1,6 +1,9 @@
 Fontawesome Extractor
 =====================
 
+NOTE: The extractor is only necessary if you want to try and export your own webfont. Just use `fontawesome-markers.min.js`
+      and forget about (delete) this folder.
+
 ##Dependencies
 * SVGO https://github.com/nathan-muir/svgo/tree/nathan-svgo
 * Font Awesome http://fortawesome.github.io/Font-Awesome

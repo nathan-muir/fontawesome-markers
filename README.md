@@ -5,6 +5,18 @@ An export of the fontawesome glyphs into named SVG Paths in javascript.
 
 All glyphs have the same names as font-awesome, except they are capitalised, and underscored, eg "exclamation-circle" becomes "EXCLAMATION_CIRCLE"
 
+Usage
+-------------------
+
+To use this library, you only need to include `fontawesome-markers.min.js`, and reference it like the examples below.
+
+If you're a masochist, you can try extracting other webfonts (or newer versions of Font Awesome) using the scripts in `extractor/`
+
+
+Example - Font Awesome on Google Maps
+-------------------
+
+
 You can use these paths, in products like Google Maps, for example:
 
 ```js
@@ -24,6 +36,9 @@ new google.maps.Marker({
 });
 ```
 
+Example - Font Awesome on Canvas
+-------------------
+
 You can also draw them to canvas, using the new Path2D api, you may need to use a [polyfill for unsupported browsers](https://github.com/google/canvas-5-polyfill)
 
 ```js
@@ -38,7 +53,8 @@ ctx.fill(path);
 ctx.stroke(path);
 ```
 
-##Update
+Update
+===================
  * 16th October 2014 - Updated to fontawesome 4.2.0
  * 7th August 2014 - Updated to fontawesome 4.1.0, see the [Fontawesome Upgrade Guide](https://github.com/FortAwesome/Font-Awesome/wiki/Upgrading-from-3.2.1-to-4) for the list of changed names.
  * 26th September 2013 - Changed font extraction process - Glyph size is a much more manageable 64px now, and rotation / flip corrected.
