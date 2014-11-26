@@ -53,6 +53,23 @@ ctx.fill(path);
 ctx.stroke(path);
 ```
 
+Example - Loading Font Awesome Markers via JSON/ XHR
+-------------------
+
+Instead of including it as an inline script, you can also load it with JSON/XHR.
+
+```js
+var fontawesome = {
+   markers: null
+};
+var xhr = new XMLHttpRequest();
+xhr.onload = function(){
+  fontawesome.markers = JSON.parse(this.responseText);
+}
+xhr.open("get", "fontawesome-markers.json", true);
+xhr.send();
+```
+
 Update
 ===================
  * 16th October 2014 - Updated to fontawesome 4.2.0
