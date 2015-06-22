@@ -13,8 +13,8 @@ if (PHP_SAPI !== 'cli'){
     die("Must be run from cli");
 }
 
-if ($argc != 3){
-    die("please invoke as " . basename(__FILE__) . " webfont.paths.min.svg fontawesome-markers.min.js"  . PHP_EOL);
+if ($argc != 4){
+    die("please invoke as " . basename(__FILE__) . " webfont.paths.min.svg fontawesome-markers.min.js fontawesome-markers.json"  . PHP_EOL);
 }
 if (!is_file($argv[1]) || !is_readable($argv[1])){
     die("First file (.svg) wasn't readable" . PHP_EOL);
@@ -40,3 +40,4 @@ foreach($paths as $path){
 }
 
 file_put_contents($argv[2], 'var fontawesome={};fontawesome.markers=' . json_encode($output).';');
+file_put_contents($argv[3], json_encode($output));

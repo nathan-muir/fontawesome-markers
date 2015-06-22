@@ -9,12 +9,20 @@ NOTE: The extractor is only necessary if you want to try and export your own web
 * Font Awesome http://fortawesome.github.io/Font-Awesome
 
 ##How to
-First we need two files from Font Awesome:
-* `font-awesome/fonts/fontawesome-webfont.svg`
-* `font-awesome/less/variables.less`
+###For Font Awesome
+Install/update the bower package and run `extract.sh`
+
+###For all others
+You need two files:
+* `yourfont/font.svg`
+* `yourfont/variables.css`
+
+Adjust `transform-webfont.php` to parse your variables correctly
+
+Then do:
 
 ```bash
-$ php transform-webfont.php fontawesome-webfont.svg variables.less webfont.paths.svg
+$ php transform-webfont.php font.svg variables.css webfont.paths.svg
 $ svgo webfont.paths.svg webfont.paths.min.svg --pretty --disable=mergePaths --disable=cleanupIDs
-$ php extract-paths.php webfont.paths.min.svg fontawesome-markers.min.js
+$ php extract-paths.php webfont.paths.min.svg yourfont-markers.min.js yourfont-markers.json
 ```

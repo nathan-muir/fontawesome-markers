@@ -1,0 +1,25 @@
+{
+  "name": "fontawesome-markers",
+  "version": "4.2.0",
+  "homepage": "https://github.com/nathan-muir/fontawesome-markers",
+  "authors": [
+    "nathan-muir <ndmuir@gmail.com>",
+    "ShaneHarvey <>",
+    "ethanclevenger91 <ethan.c.clevenger@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "extractor",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "fontawesome": "4.2.0"
+  },
+  "main": "index.js",
+  "moduleType": "node"
+}
