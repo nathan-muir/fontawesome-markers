@@ -1,0 +1,23 @@
+{
+  "name": "fontawesome-markers",
+  "version": "4.2.0",
+  "description": "",
+  "main": "fontawesome-markers.json",
+  "dependencies": {},
+  "devDependencies": {
+    "svgo": "git://github.com/nathan-muir/svgo.git#fix-config"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathan-muir/fontawesome-markers.git"
+  },
+  "author": "Nathan Muir <ndmuir@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nathan-muir/fontawesome-markers/issues"
+  },
+  "homepage": "https://github.com/nathan-muir/fontawesome-markers#readme"
+}

@@ -4,13 +4,15 @@ Fontawesome Extractor
 NOTE: The extractor is only necessary if you want to try and export your own webfont. Just use `fontawesome-markers.min.js`
       and forget about (delete) this folder.
 
-##Dependencies
-* SVGO https://github.com/nathan-muir/svgo/tree/nathan-svgo
-* Font Awesome http://fortawesome.github.io/Font-Awesome
-
 ##How to
 ###For Font Awesome
-Install/update the bower package and run `extract.sh`
+
+```sh
+cd fontawesome-markers
+bower install
+npm install
+bash extractor/extract.sh
+```
 
 ###For all others
 You need two files:
