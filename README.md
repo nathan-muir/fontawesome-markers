@@ -8,7 +8,9 @@ All glyphs have the same names as font-awesome, except they are capitalised, and
 Usage
 -------------------
 
-To use this library, you only need to include `fontawesome-markers.min.js`, and reference it like the examples below.
+Install on bower with `bower install fontawesome-markers`
+Or, install with NPM with `npm install fontawesome-markers`
+Or, just add `fontawesome-markers.min.js` to your page and reference it like the examples below.
 
 If you're a masochist, you can try extracting other webfonts (or newer versions of Font Awesome) using the scripts in `extractor/`
 
@@ -72,6 +74,7 @@ xhr.send();
 
 Update
 ===================
+ * 18th April 2016 - Made it super easy to build for new versions of fontawesome. Released on Bower & NPM.
  * 16th October 2014 - Updated to fontawesome 4.2.0
  * 7th August 2014 - Updated to fontawesome 4.1.0, see the [Fontawesome Upgrade Guide](https://github.com/FortAwesome/Font-Awesome/wiki/Upgrading-from-3.2.1-to-4) for the list of changed names.
  * 26th September 2013 - Changed font extraction process - Glyph size is a much more manageable 64px now, and rotation / flip corrected.
